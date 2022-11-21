@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "venkattest-fb99"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "venkattest-fb99"
+  template:
+    metadata:
+      labels:
+        app: "venkattest-fb99"
+    spec:
+      containers:
+        - name: "venkattest-fb99"
+          image: "venkatregistry.azurecr.io/venkattest"
+          ports:
+          - containerPort: 80
