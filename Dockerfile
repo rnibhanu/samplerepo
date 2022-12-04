@@ -1,5 +1,5 @@
 # Pull base image 
-From tomcat:8-jre8 
+From venkatram/webapp:v1 
 
 # Maintainer 
 MAINTAINER "nvenkata1975@gmail.com" 
